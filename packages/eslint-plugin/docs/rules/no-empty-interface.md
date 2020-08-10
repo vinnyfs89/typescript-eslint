@@ -55,9 +55,23 @@ This rule accepts a single object option with the following default configuratio
 
 - `allowSingleExtends: true` will silence warnings about extending a single interface without adding additional members
 
+## How to disable
+
+```javascript
+Example:
+
+$ cat .eslintrc.js
+  ...
+  "rules": {
+  '@typescript-eslint/no-empty-interface': 'off'
+  }
+  ...
+```
+
 ## When Not To Use It
 
 If you don't care about having empty/meaningless interfaces, then you will not need this rule.
+
 
 ## Compatibility
 
